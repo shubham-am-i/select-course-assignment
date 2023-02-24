@@ -1,0 +1,37 @@
+.categoryBox {
+  display: flex;
+  gap: 48px;
+}
+
+.category {
+  display: inline-block;
+  position: relative;
+  padding: 20px 24px;
+  width: 147px;
+  height: 100px;
+  border-radius: 8px;
+  outline: none !important;
+  border: none;
+}
+
+.title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px;
+}
