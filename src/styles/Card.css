@@ -1,6 +1,7 @@
 .card-container {
   margin-top: 4.3rem;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 3.56rem;
 }
