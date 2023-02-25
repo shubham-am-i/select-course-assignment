@@ -51,6 +51,14 @@ export default function Container() {
     darkTheme = dark
   }
 
+  const cardProps = {
+    lightTheme,
+    darkTheme,
+    junior: isJunior,
+    category,
+    course,
+  }
+
   return (
     <section>
       <main>
@@ -100,7 +108,7 @@ export default function Container() {
         </div>
 
         {/* Card component to display courses */}
-        <Card junior={isJunior} course={course} category={category} />
+        <Card {...cardProps} />
       </main>
     </section>
   )

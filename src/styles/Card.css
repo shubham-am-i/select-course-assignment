@@ -1,0 +1,89 @@
+.card-container {
+  margin-top: 4.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.56rem;
+}
+
+.card {
+  width: 328px;
+  height: 765px;
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+  border-radius: var(--bdrs);
+  /* transition: 360ms all ease-in-out; */
+}
+.card:hover {
+  /* transform: translateY(-2.5rem); */
+}
+.card-top {
+  /* padding: 1rem; */
+  width: 328px;
+  height: 140px;
+  padding-top: 1rem;
+  position: relative;
+  text-align: left;
+  border-radius: var(--bdrs);
+}
+.left-arrow {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  transform: translateY(-50%);
+  width: 180px;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+}
+.card-title {
+  margin-top: 0px;
+  position: absolute;
+  padding-left: 16px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-name {
+  margin-top: 46px;
+  padding-left: 1rem;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.card-body {
+  padding: 16px;
+  text-align: left;
+}
+.pitch {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--primary);
+}
+.curriculum-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--black);
+}
+.card-body li {
+  margin-left: 8px;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--primary-light);
+}
+.card-body a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: var(--primary);
+}

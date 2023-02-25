@@ -1,5 +1,6 @@
 .categoryBox {
   display: flex;
+  justify-content: center;
   gap: 48px;
 }
 
