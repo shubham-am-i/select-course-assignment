@@ -23,7 +23,7 @@ function RatingStar({value}) {
         max={5}
         readOnly
         style={{
-          display: 'inline-block',
+          // display: 'inline-block',
           display: 'flex',
           width: '50%',
           color: '#FACD46',
