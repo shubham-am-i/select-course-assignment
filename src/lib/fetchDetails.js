@@ -1,4 +1,4 @@
-export default function fetchThemes(category) {
+export default function fetchDetails(category) {
   switch (category) {
     case 'Communication': {
       return {
@@ -23,5 +23,19 @@ export default function fetchThemes(category) {
         light: '#EDFCFF',
         dark: '#3EBEff',
       }
+  }
+}
+
+export const juniorMaxAge = (category) => {
+  switch (category) {
+    case 'Communication': {
+      return 10
+    }
+    case 'Visual Arts': {
+      return 9
+    }
+    case 'Music': {
+      return 15
+    }
   }
 }
