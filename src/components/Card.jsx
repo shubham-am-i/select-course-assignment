@@ -13,11 +13,12 @@ const Card = (props) => {
   const [isHovered, setIsHovered] = useState(false)
   const [activeCard, setActiveCard] = useState(null)
 
+  // hover handler1
   const handleMouseOver = (i) => {
     setActiveCard(i)
     setIsHovered(true)
   }
-
+  // hover handler2
   const handleMouseOut = () => {
     setIsHovered(false)
   }
@@ -42,6 +43,9 @@ const Card = (props) => {
             onMouseOut={handleMouseOut}>
             {/* SECTION - CARD TOP */}
             <section className='card-top' style={{background: normal}}>
+              <div class='discount-circle' style={{background: inverse}}>
+                20% off
+              </div>
               <p
                 className='left-arrow card-title'
                 style={{
@@ -61,6 +65,7 @@ const Card = (props) => {
                 <span className='reviews'>{item.rating.split(';')[2]} reviews</span>
               </p>
             </section>
+
             {/* SECTION - CARD BODY */}
             <section className='card-body'>
               <p className='pitch'>{item.pitch}</p>
@@ -69,8 +74,8 @@ const Card = (props) => {
               {item.curriculum_outcomes.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
-
               <a href='#'>View Detailed Lesson Plan</a>
+
               {/* PRICE SECTION */}
               <div className='price-container'>
                 <span>&#8377; {item.original_price}</span>

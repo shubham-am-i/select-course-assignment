@@ -11,10 +11,10 @@
   background: var(--bg-card);
   box-shadow: var(--shadow);
   border-radius: var(--bdrs);
-  /* transition: 360ms all ease-in-out; */
+  transition: 360ms all ease-in-out;
 }
 .card:hover {
-  /* transform: translateY(-2.5rem); */
+  transform: translateY(-2.5rem);
 }
 .card-top {
   /* padding: 1rem; */
@@ -24,6 +24,21 @@
   position: relative;
   text-align: left;
   border-radius: var(--bdrs);
+}
+
+.discount-circle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 45px;
+  height: 45px;
+  border-radius: 0px 0px 0px 250px;
+  display: flex;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: end;
+  padding: 0.5rem;
 }
 .left-arrow {
   position: absolute;

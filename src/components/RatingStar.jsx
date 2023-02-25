@@ -22,7 +22,12 @@ function RatingStar({value}) {
         precision={0.1}
         max={5}
         readOnly
-        style={{display: 'inline-block', display: 'flex', width: '50%'}}
+        style={{
+          display: 'inline-block',
+          display: 'flex',
+          width: '50%',
+          color: '#FACD46',
+        }}
       />
       {/* <Box className={styles.ratingValue} component='span' ml={1}>
         {value.toFixed(1)}
